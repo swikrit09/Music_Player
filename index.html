@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'
+        integrity='sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <title>Music Application</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">Shape of you</h2>
+            <h3 id="artist">Ed Sheran</h3>
+            <div class="img_container ">
+                <img src="https://imgs.search.brave.com/isZ10MKltbEb7MLSBGNvMw-S2CuwrST7CJImhEfDcnk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzQ1L2Q2/L2I5LzQ1ZDZiOTY0/N2YwMDlhY2IzM2Y1/YzY2NjI1OGU1ZjU3/LS1zb25nLW9uZS10/YWtpbmctYS1icmVh/ay5qcGc"
+                    alt="">
+            </div>
+            <audio src="music/audio1.mp3"></audio>
+            <!-- progressbar -->
+            <div class="progressbar_container" id="prgress_container">
+                <div class="progress_duration_meter">
+                    <div id="currTime">0:00</div>
+                    <p id="duration">3:19</p>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <!-- controls -->
+            <div class="music_controls">
+                <i class="fas fa-volume-up" title="Volume" id="volume"></i>
+                <i class="fas fa-backward" title="Previous" id="prev"></i>
+                <i class="fas fa-play main-btn" title="Play" id="play"></i>
+                <i class="fas fa-forward" title="Next" id="next"></i>
+                <i class="fas fa-download" title="Download" id="download"></i>
+            </div>
+            <div class="mode">
+                <p id="theme-label">Dark theme</p>
+                <input type="checkbox" id="theme" class="toggle-input">
+                <label for="theme" class="toggle-label"></label>
+                <p id="dtheme-label">Disco theme</p>
+                <input type="checkbox" id="dtheme">
+                <label for="dtheme"></label>
+            </div>
+        </div>
+        <footer>Made with ❤ by Swikrit Shukla X swikki_codes</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
